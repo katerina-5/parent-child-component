@@ -1,3 +1,8 @@
-<p>
-  parent works!
-</p>
+<h1>This is a parent component</h1>
+<button (click)='changeChildData()'>Change child data </button>
+<hr>
+<strong>{{string2}}</strong>
+<app-child (outToParent)='receiveFromChild($event)' [inFromParent]='string1'></app-child>
+<hr>
+
+<!-- <app-child></app-child> -->
